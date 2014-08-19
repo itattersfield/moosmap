@@ -1,62 +1,3 @@
-<!-- MEP ENERGY MAP STYLE SHEET -->
-
-html { height: 100%; }
-body { height: 100%; margin: 0; padding: 0; }
-
-#buildingStatus .energyValue {
-	color: #3C0;
-	margin-left:0px;
-	font-weight: bold;
-}
-
-div.hideme { display: none }
-
-#checkboxes { 
-	position: absolute; 
-	top: 50px; 
-	right: 10px;
-	font-family: 'arial', 'sans-serif'; 
-	font-size: 14px;
-	background-color: white;
-	border: 1px solid black;
-	padding: 10px 10px 0px 10px;
-	}
-
-#sidebar1{
-	position:fixed;
-	bottom 115px:
-	padding: 0px 0px 0px 10px;
-	font-family:Verdana, Geneva, sans-serif;
-	bottom:0;
-	width:507px;
-	height:600px;
-	font-size: 15px;
-}
-
-#footer2{
-	background-image:url(../../media/navigation/bottom2.png);
-	position:absolute;
-	padding: 0px 0px 0px 10px;
-	font-family:Verdana, Geneva, sans-serif;
-	color: #FFF;
-	padding: 0px 0px 0px 10px;
-	bottom:0;
-	width:512px;
-	height:112 px;
-	font-size: 15px;
-}
-
-
-
-#map_canvas { height: 95%; }
-
-
-
-<!-- Top Menu Bar .css and code courteousy of Zurb foundation -->
-<!-- http://foundation.zurb.com/docs/v/3.2.5/navigation.php#btopCode -->
-
-
-
 meta.foundation-version {
   font-family: "/5.3.3/"; }
 
@@ -1514,8 +1455,7 @@ meta.foundation-mq-topbar {
   .top-bar-section .has-form {
     padding: 15px; }
   .top-bar-section .has-dropdown {
-    position: relative; 
-	background:#666}
+    position: relative; }
     .top-bar-section .has-dropdown > a:after {
       content: "";
       display: block;
@@ -1545,7 +1485,6 @@ meta.foundation-mq-topbar {
   .top-bar-section .dropdown {
     padding: 0;
     position: absolute;
-	background:#666;
     left: 100%;
     top: 0;
     z-index: 99;
@@ -1556,10 +1495,7 @@ meta.foundation-mq-topbar {
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px); }
     .top-bar-section .dropdown li {
-      width: 200px;
-	  font:"Courier New", Courier, monospace;
-	  font-size:10px;
-	  	background:#666;
+      width: 100%;
       height: auto; }
       .top-bar-section .dropdown li a {
         font-weight: normal;
@@ -1989,7 +1925,7 @@ meta.foundation-mq-topbar {
   border-color: #d8d8d8;
   margin-bottom: 1.25rem;
   padding: 1.25rem;
-  background: #f91e1e; }
+  background: #f2f2f2; }
   .panel > :first-child {
     margin-top: 0; }
   .panel > :last-child {
@@ -3835,8 +3771,7 @@ dialog.full, .reveal-modal.full {
 .off-canvas-wrap {
   -webkit-backface-visibility: hidden;
   position: relative;
-  width: 280px;
-  height:600px;
+  width: 100%;
   overflow: hidden; }
   .off-canvas-wrap.move-right, .off-canvas-wrap.move-left {
     min-height: 100%;
@@ -3846,7 +3781,6 @@ dialog.full, .reveal-modal.full {
   -webkit-backface-visibility: hidden;
   position: relative;
   width: 100%;
-  height: 100%;
   -webkit-transition: -webkit-transform 500ms ease;
   -moz-transition: -moz-transform 500ms ease;
   -ms-transition: -ms-transform 500ms ease;
@@ -3860,7 +3794,7 @@ dialog.full, .reveal-modal.full {
 
 .tab-bar {
   -webkit-backface-visibility: hidden;
-  background: #CC3;
+  background: #333333;
   color: white;
   height: 2.8125rem;
   line-height: 2.8125rem;
@@ -3910,7 +3844,7 @@ dialog.full, .reveal-modal.full {
 
 .tab-bar .menu-icon {
   text-indent: 2.1875rem;
-  width: 100px;
+  width: 2.8125rem;
   height: 2.8125rem;
   display: block;
   padding: 0;
@@ -3933,12 +3867,11 @@ dialog.full, .reveal-modal.full {
 .left-off-canvas-menu {
   -webkit-backface-visibility: hidden;
   width: 15.625rem;
-  height: 600px;
   top: 0;
   bottom: 0;
   position: absolute;
   overflow-y: auto;
-  background-image:url(../../media/navigation/left.png);
+  background: #333333;
   z-index: 1001;
   box-sizing: content-box;
   transition: transform 500ms ease 0s;
@@ -3980,7 +3913,7 @@ ul.off-canvas-list {
   padding: 0;
   margin: 0; }
   ul.off-canvas-list li label {
-
+    display: block;
     padding: 0.3rem 0.9375rem;
     color: #999999;
     text-transform: uppercase;
@@ -5373,10 +5306,11 @@ div.switch label {
   display: block;
   margin-bottom: 1rem;
   position: relative;
-  color: #000;
+  color: transparent;
   background: #dddddd;
-  width: 200px;
-  height: 400px;
+  text-indent: 100%;
+  width: 4rem;
+  height: 2rem;
   cursor: pointer;
   transition: left 0.15s ease-out; }
 div.switch input {

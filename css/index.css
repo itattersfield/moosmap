@@ -1,0 +1,54 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#buildingStatus .energyValue {
+	color: #3C0;
+	margin-left:0px;
+	font-weight: bold;
+}
+
+div.hideme { display: none }
+
+#checkboxes { 
+	position: absolute; 
+	top: 50px; 
+	right: 10px;
+	font-family: 'arial', 'sans-serif'; 
+	font-size: 14px;
+	background-color: white;
+	border: 1px solid black;
+	padding: 10px 10px 0px 10px;
+	}
+
+#sidebar1{
+	position:fixed;
+	bottom 115px:
+	padding: 0px 0px 0px 10px;
+	font-family:Verdana, Geneva, sans-serif;
+	bottom:0;
+	width:507px;
+	height:600px;
+	font-size: 15px;
+}
+
+#footer2{
+	background-image:url(../../media/navigation/bottom2.png);
+	position:absolute;
+	padding: 0px 0px 0px 10px;
+	font-family:Verdana, Geneva, sans-serif;
+	color: #FFF;
+	padding: 0px 0px 0px 10px;
+	bottom:0;
+	width:512px;
+	height:112 px;
+	font-size: 15px;
+}
+
+#map_canvas { height: 95%; }
+
+.gmnoprint {
+  display: none;
+}

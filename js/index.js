@@ -1,3 +1,6 @@
+console.log('Welcome to the McGill Office of Sustainability.')
+console.log('Created by Ian Tattersfield, 2014. All Rights Reserved.')
+
 var map;
 var layers = [];
 
