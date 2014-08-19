@@ -23,8 +23,8 @@
 <body>
   <nav class="top-bar" data-topbar data-options="is_hover: true">
     <ul class="title-area">
-      <li>
-        <img src="img/crest.png">
+      <li class="name">
+        <img src="img/crest.png" class="mcgill-crest">
       </li>
       <li class="name">
         <h1><a href="#">Downtown Campus Use: </a></h1> 
