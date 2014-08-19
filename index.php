@@ -88,21 +88,25 @@
 
 <!-- 1776 -->
 
+<div id="sidebar">
+  <ul class="side-nav">
+    <li>
+      <div>
+        <div class="switch">
+          <input id="dtlive" type="checkbox" onclick="toggleLayer(0);">
+          <label for="dtlive">kWh 2013</label>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
 
 <div id="sidebar1">
 <div class="off-canvas-wrap" data-offcanvas>  <!--3830 for width, 3933 for colour -->
  <div class="inner-wrap"> 
   <a class="left-off-canvas-toggle" href="#" ><img src="../media/icons/expand.png"> &nbsp; Select Layers</a> 
    <aside class="left-off-canvas-menu">
-   <br> &nbsp;
-  <ul style="list-style: none outside none;">
-        <li style="float: left;display: block;width: 100px;height: 40px;">
-                  <div class="switch">
-                      <input id="dtlive" type="checkbox">
-            <label for="dtlive" onclick="toggleLayer(0);"></label></div></li>
-                <li style="float: left;display: block;width: 100px;height: 40px; font-size:12px;">kWh 2013</li>
-    </ul>
-    <br>
     <ul style="list-style: none outside none;">
         <li style="float: left;display: block;width: 100px;height: 40px;">
                   <div class="switch">
