@@ -21,15 +21,18 @@
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> 
 </head>
 <body>
-  <nav class="top-bar" data-topbar data-options="is_hover: true"> 
-  <ul class="title-area"> 
-  <li class="name"> 
-  <h1><a href="#">Downtown Campus Use: </a></h1> 
-  </li> 
-  <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li> 
-  </ul> 
-  <section class="top-bar-section"> 
-  <ul class="right"> 
+  <nav class="top-bar" data-topbar data-options="is_hover: true">
+    <ul class="title-area">
+      <li>
+        <img src="img/crest.png">
+      </li>
+      <li class="name">
+        <h1><a href="#">Downtown Campus Use: </a></h1> 
+      </li>
+    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+    </ul>
+  <section class="top-bar-section">
+  <ul class="right">
       <li class="name"> 
        <h1><a href="#">Select Campus Data: </a></h1> 
       </li> 
