@@ -29,7 +29,6 @@
           <a href="#">Downtown Campus Use: </a>
         </h1> 
       </li>
-    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
     </ul>
   <section class="top-bar-section">
   <ul class="right">
@@ -183,17 +182,16 @@
 
 <div id="footer2">
 &nbsp;Select Campus View: 
-  <div class="button-bar">  <!-- 1986 color -->
+  <div class="button-bar">
       <ul class="button-group [radius round]">
         <li><a href="#" class="tiny button secondary" onClick="wipe(); toggle_visibility('dtlivelegend'); toggleLayer(2); toggleLayer(8); toggleLayer(1)"><img src="../media/map_elements/downtown.png"></a></li>
         <li><a href="#" class="tiny button secondary" onClick="wipe(); toggle_visibility('maclivelegend'); toggleLayer(22); toggleLayer(21); toggleLayer(23)"><img src="../media/map_elements/macdonald.png"></a></li>
       </ul>
     </div>
 </div>
-<!-- 1882 -->
 
 <script type="text/template" id="jst-map-form">
-  <img src=\"http://www.moosmap.com/media/map_elements/msp.png\">
+  <img src="http://www.moosmap.com/media/map_elements/msp.png">
   <br>
   <table>
     <tr><td><input type="text" id="name" value="Input Location Name"></td></tr>
@@ -203,10 +201,10 @@
     <tr><td><input type="text" id="user" value="Input your name"></td></tr>
     <tr><td>
       <select id="type">
-        <option value="unspecified" >I am a:</option>
-        <option value="student" >student</option>
-        <option value="professor" >professor</option>
-        <option value="staff" >staff</option>
+        <option value="unspecified">I am a:</option>
+        <option value="student">student</option>
+        <option value="professor">professor</option>
+        <option value="staff">staff</option>
         <option value="visitor">visitor</option>
       </select>
     </td></tr>
