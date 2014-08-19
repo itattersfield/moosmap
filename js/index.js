@@ -128,58 +128,74 @@ function wipe(){
 
 
 //==========================================================================================
-function toggleMsp() {  
-    google.maps.event.addListener(map, "click", function(event) {
+
+function toggleMsp() {
+    google.maps.event.addListener(map, 'click', function (event) {
         marker = new google.maps.Marker({
           position: event.latLng,
           map: map
         });
-        google.maps.event.addListener(marker, "click", function() {
-          infowindow.open(map, marker);
-        });
+        infowindow.open(map, marker);
     });
 }
 
 //=========================================================================================
 function saveData() {
-      var name = escape(document.getElementById("name").value);
-      var current = escape(document.getElementById("current").value);
-      var suggestions = escape(document.getElementById("suggestions").value);
-      var photo = escape(document.getElementById("photo").value);
-      var user = escape(document.getElementById("user").value);
-    var type = escape(document.getElementById("type").value);
-      var type = document.getElementById("type").value;
-      var latlng = marker.getPosition();
+  var name = escape(document.getElementById("name").value);
+  var current = escape(document.getElementById("current").value);
+  var suggestions = escape(document.getElementById("suggestions").value);
+  var photo = escape(document.getElementById("photo").value);
+  var user = escape(document.getElementById("user").value);
+  var type = escape(document.getElementById("type").value);
+  var latlng = marker.getPosition();
 
-      var url = "http://www.moosmap.com/msp/msp_db_connect.php?name=" + name + "&current=" + current +
-                "&suggestions=" + suggestions + "&photo=" + photo + "&user=" + user + "&type=" + type + "&lat=" + latlng.lat() + "&lng=" + latlng.lng();
-        
-      downloadUrl(url, function(data, responseCode) {
-        if (responseCode == 200 && data.length >= 1) {
-          infowindow.close();
-          document.getElementById("message").innerHTML = "Location added.";
-        }
-      });
-    infowindow.close();
+  var url = 'http://www.moosmap.com/msp/msp_db_connect.php'
+  url += '?name=' + name
+  url += '&current=' + current
+  url += '&suggestions=' + suggestions + "&photo=" + photo + "&user=" + user + "&type=" + type + "&lat=" + latlng.lat() + "&lng=" + latlng.lng();
+
+  var params = $.param({
+    name: name,
+    current: current,
+    suggestions: suggestions,
+    photo: photo,
+    user: user,
+    type: type,
+    lat: latlng.lat(),
+    lng: latlng.lng()
+  })
+  console.log(params)
+
+  downloadUrl(url, function(data, responseCode) {
+    if (responseCode == 200 && data.length >= 1) {
+      infowindow.close();
+      document.getElementById("message").innerHTML = "Location added.";
     }
+  });
+
+  infowindow.close();
+  google.maps.event.clearListeners(map, 'click');
+}
 
 
 //=========================================================================================
 function downloadUrl(url, callback) {
-      var request = window.ActiveXObject ?
-          new ActiveXObject('Microsoft.XMLHTTP') :
-          new XMLHttpRequest;
+  // USE JQUERY PLEASE -- look up $.get()
 
-      request.onreadystatechange = function() {
-        if (request.readyState == 4) {
-          request.onreadystatechange = doNothing;
-          callback(request.responseText, request.status);
-        }
-      };
+  var request = window.ActiveXObject ?
+      new ActiveXObject('Microsoft.XMLHTTP') :
+      new XMLHttpRequest;
 
-      request.open('GET', url, true);
-      request.send(null);
+  request.onreadystatechange = function() {
+    if (request.readyState == 4) {
+      request.onreadystatechange = doNothing;
+      callback(request.responseText, request.status);
     }
+  };
+
+  request.open('GET', url, true);
+  request.send(null);
+}
 
 
 //==========================================================================================
