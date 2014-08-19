@@ -17,7 +17,7 @@
   <script src="vendor/modernizr.js"></script>
   <script src="vendor/jquery.js"></script>
   <script src="vendor/fastclick.js"></script>
-  <script src="vendor/foundation.js"></script>
+  <script src="vendor/foundation.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> 
 </head>
 <body>
@@ -196,6 +196,6 @@
 <script>
   $(document).foundation();
 </script>    
-  <script type="text/javascript" src="js/index.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
