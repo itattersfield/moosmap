@@ -92,10 +92,11 @@
   <ul class="side-nav">
     <li>
       <div>
-        <div class="switch">
-          <input id="dtlive" type="checkbox" onclick="toggleLayer(0);">
-          <label for="dtlive">kWh 2013</label>
+        <div class="switch left">
+          <input id="dtlive" type="checkbox" onclick="toggleLayer(20);">
+          <label for="dtlive"></label>
         </div>
+        <span class="switch-label">kWh 2013</span>
       </div>
     </li>
   </ul>

@@ -13,6 +13,12 @@ html, body {
   background: white;
 }
 
+.switch-label {
+  margin-left: 10px;
+  height: 32px;
+  line-height: 32px;
+}
+
 #buildingStatus .energyValue {
   color: #3C0;
   margin-left:0px;
