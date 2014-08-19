@@ -69,13 +69,8 @@
   <li class=><a href="file:///C|/Users/Ian/Desktop/Website/Root/MEP/earth.php">3D View</a></li>
   </ul> 
   </section> 
-  </nav>
-<div id="myModal" class="reveal-modal" data-reveal style="display: none"> <img src="file:///C|/Users/Ian/Desktop/Website/Root/MEP/elements/images/info.png" align="center"> <a class="close-reveal-modal">&#215;</a></div>
-
-
+</nav>
 <div id="map_canvas"></div>
-
-
 <div id="sustainability">
   <img src="../media/map_elements/sustainability.png">
 </div>
