@@ -99,6 +99,11 @@
         <span class="switch-label">kWh 2013</span>
       </div>
     </li>
+    <li>
+      <div>
+        <button class="button" onclik="toggleMsp();">Suggest Site Location</button>
+      </div>
+    </li>
   </ul>
 </div>
 
@@ -122,14 +127,6 @@
                       <input id="SPF" type="checkbox" checked>
             <label for="SPF" onclick="toggleLayer(2);"></label></div></li>
                 <li style="float: left;display: block;width: 100px;height: 40px; font-size:12px;"><img src="../media/icons/SPF3.png" width="18px" height="18px">&nbsp;SPF Projects</li>
-    </ul>
-    <br>
-     <ul style="list-style: none outside none;">
-       <li style="float: left;display: block;width: 100px;height: 40px;">
-                  <div class="switch">
-                      <input id="msp" type="checkbox">
-            <label for="msp" onclick="toggleMsp();"></label></div></li>
-                <li style="float: left;display: block;width: 100px;height: 40px; font-size:12px;"><img src="../media/icons/msp2.png" width="18px" height="18px">&nbsp;Site Suggestion</li>
     </ul>
     <br>
      <ul style="list-style: none outside none;">
