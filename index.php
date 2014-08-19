@@ -77,9 +77,6 @@
 <div id="sustainability">
   <img src="../media/map_elements/sustainability.png">
 </div>
-<div id="title">
-  <img src="../media/map_elements/title.png">
-</div>
 <div id="kwhlegend" class="hideme">
   <img src="../media/map_elements/kwh.png">
 </div>
@@ -195,6 +192,27 @@
 </div>
 <!-- 1882 -->
 
+<script type="text/template" id="jst-map-form">
+  <img src=\"http://www.moosmap.com/media/map_elements/msp.png\">
+  <br>
+  <table>
+    <tr><td><input type='text' id='name' value='Input Location Name'></td></tr>
+    <tr><td><input type='text' id='current' value='Describe the location (500 words max)'></td></tr>
+    <tr><td><input type='text' id='suggestions' value='Describe how you would change the space (500 words max)'></td></tr>
+    <tr><td><input type='text' id='photo' value='insert a valid photo url'></td></tr>
+    <tr><td><input type='text' id='user' value='Input your name'></td></tr>
+    <tr><td>
+      <select id='type'>
+        <option value='unspecified' >I am a:</option>
+        <option value='student' >student</option>
+        <option value='professor' >professor</option>
+        <option value='staff' >staff</option>
+        <option value='visitor'>visitor</option>
+      </select>
+    </td></tr>
+    <tr><td><input type='button' value='Save' onclick='saveData(); wipe(); toggleLayer(30);'/></td></tr>
+  </table>
+</script>
 
 <script>
   $(document).foundation();
