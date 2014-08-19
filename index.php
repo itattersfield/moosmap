@@ -101,14 +101,14 @@
     </li>
     <li>
       <div>
-        <button class="button" onclik="toggleMsp();">Suggest Site Location</button>
+        <button class="button" onclick="toggleMsp();">Suggest Site Location</button>
       </div>
     </li>
   </ul>
 </div>
 
 
-<div id="sidebar1">
+<div id="sidebar1" style="display: none;">
 <div class="off-canvas-wrap" data-offcanvas>  <!--3830 for width, 3933 for colour -->
  <div class="inner-wrap"> 
   <a class="left-off-canvas-toggle" href="#" ><img src="../media/icons/expand.png"> &nbsp; Select Layers</a> 

@@ -13,6 +13,12 @@ html, body {
   background: white;
 }
 
+#sustainability {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
 .switch-label {
   margin-left: 10px;
   height: 32px;

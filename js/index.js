@@ -85,11 +85,9 @@ function initialize() {
   map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(maclivelegend);
     
   var html = $('#jst-map-form').html();
-  console.log(html)
   infowindow = new google.maps.InfoWindow({
     content: html
   });
-
 }  
 
 
