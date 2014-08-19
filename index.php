@@ -24,10 +24,10 @@
   <nav class="top-bar" data-topbar data-options="is_hover: true">
     <ul class="title-area">
       <li class="name">
-        <img src="img/crest.png" class="mcgill-crest">
-      </li>
-      <li class="name">
-        <h1><a href="#">Downtown Campus Use: </a></h1> 
+        <h1>
+          <img src="img/crest.png" class="mcgill-crest">
+          <a href="#">Downtown Campus Use: </a>
+        </h1> 
       </li>
     <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
     </ul>
