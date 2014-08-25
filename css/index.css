@@ -2,15 +2,82 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden  /*this is from slider */
 }
 
-#sidebar {
+#sidr-left .button {
+	padding: 5px 5px 5px 5px;
+	width:100px;
+	height:22px;	
+	left: 75px;
+}
+
+#sidebarDt {
   position: fixed;
   top: 50px;
   left: 0;
   width: 300px;
-  height: 200px;
-  background: white;
+  height: 175px;
+  background: rgba(188,178,180,0.8);
+  color: black;
+  overflow-y: scroll;
+  overflow-x: hidden;
+    border: solid;
+  border-color: black;
+}
+
+
+#sidebarDt .button {
+	padding: 5px 5px 5px 5px;
+	left: 75px;
+}
+
+#sidebarMac {
+  position: fixed;
+  top: 225px;
+  left: 0;
+  width: 300px;
+  height: 175px;
+  background: rgba(157,128,49,0.8);
+  color: green;
+  overflow-y: scroll;
+  overflow-x: hidden;
+    border: solid;
+  border-color: black;
+}
+
+#sidebarMac .side-nav  .button {
+	padding: 5px 5px 5px 5px;
+	left: 75px;
+}
+
+#sidebarMSP {
+  position: fixed;
+  top: 400px;
+  left: 0;
+  width: 300px;
+  height: 175px;
+  background: rgba(192,75,89,0.8);
+  color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: solid;
+  border-color: black;
+}
+
+#sidebarMSP .button {
+	left: 25px;	
+}
+
+li .mspImg {
+	position: relative;
+	left: 5px;
+}
+
+p {
+	margin: 16px 5px 5px 5px;
+	list-style: none;
+	padding-left:0;
 }
 
 #sustainability {
@@ -19,8 +86,8 @@ html, body {
   right: 0;
 }
 
-.switch-label {
-  margin-left: 10px;
+li .switch-label {
+  margin-left: 0px;
   height: 32px;
   line-height: 32px;
 }
@@ -46,10 +113,9 @@ div.hideme { display: none }
 
 #sidebar1{
   position:fixed;
-  bottom 115px:
   padding: 0px 0px 0px 10px;
   font-family:Verdana, Geneva, sans-serif;
-  bottom:0;
+  bottom:200px;
   width:507px;
   height:600px;
   font-size: 15px;
@@ -73,3 +139,137 @@ div.hideme { display: none }
 .mcgill-crest {
   height: 45px;
 }
+
+
+/*=================================Zurb foundation overlay CSS======================================*/
+.top-bar .name h1 {
+      line-height: 45px;
+	  color: white;	
+      font-size: 1.0625rem;
+      margin: 0; }
+.top-bar .title {
+	  line-height: 45px;
+	  color: #999;	
+      font-size: 1.0625rem;
+      margin: 0; }
+}
+	  
+/*===============================Side Menu CSS =============================================*/
+
+
+/* Navigation Menu - Background */
+.navigation {
+  /* critical sizing and position styles */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  
+  /* non-critical appearance styles */
+  list-style: none;
+  background: #111;
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+  /* non-critical appearance styles */
+  width: 200px;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #000;
+}
+
+.nav-item a {
+  /* non-critical appearance styles */
+  display: block;
+  padding: 1em;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: #c74438;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+}
+
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+  /* Critical position and size styles */
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white; /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  
+  /* non-critical apperance styles */
+  padding: 4em;
+  background-image: linear-gradient(135deg, rgb(254,255,255) 0%,rgb(221,241,249) 35%,rgb(160,216,239) 100%);
+  background-size: 200%;
+}
+
+/* Nav Trigger */
+.nav-trigger {
+  /* critical styles - hide the checkbox input */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  /* critical positioning styles */
+  position: fixed;
+  left: 15px; top: 15px;
+  z-index: 2;
+  
+  /* non-critical apperance styles */
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+}
+
+/* Make the Magic Happen */
+.nav-trigger + label, .site-wrap {
+  transition: left 0.2s;
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+body {
+	/* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+}
+
+/* Additional non-critical styles */
+
+h1, h3, p {
+  max-width: 600px;
+  margin: 0 auto 1em;
+}
+
+code {
+	padding: 2px;
+	background: #ddd;
+}
+
+/* Micro reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+
+
